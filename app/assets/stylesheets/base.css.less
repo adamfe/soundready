@@ -1,12 +1,19 @@
 @import "twitter/bootstrap";
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #eee;
+  height: 100%;
+  #gradient > .vertical(darken(@blue, 14), @blue);
 }
 
 h1.branding {
   text-align: center;
   margin: 10px 0;
+  font-weight: 600;
   em {
     font-weight: 100;
   }
@@ -34,13 +41,14 @@ h1.branding {
 .footer {
   margin-top: 10px;
   text-align: center;
-  p {
+  p, a {
     font-size: 12px;
-    font-color: @grayLight;  
+    color: @white;  
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   }
 }
 
-.landing-banner {
+.main-content {
   background: url('/assets/concert_1.jpeg');
   height: 490px;
   width: 760px;
@@ -49,6 +57,7 @@ h1.branding {
 
 .landing-content {
   padding: 25px 30px 0 30px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   h1 {
     color: @white;
     width: 295px;
@@ -62,5 +71,3 @@ h1.branding {
     width: 300px;
   }
 }
-
-
