@@ -2,6 +2,13 @@ Soundready::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+  resources :sessions
+  match 'login' => 'sessions#new', :as => :login
+  match 'logout' => 'sessions#destroy', :as => :logout
+
+  # Music API callbacks
+  match 'rdio_callback' => 'sessions#rdio_callback', :as => :rdio_callback
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
@@ -48,7 +55,7 @@ Soundready::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'defaults#index'
 
   # See how all your routes lay out with "rake routes"
 

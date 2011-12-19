@@ -12,13 +12,12 @@ Models:
     service_song_id
     play_list_id
 
-  PlayList:
+  Playlist:
     name:
     description
     service
     setlist_id
     playlist_url
-
 
   Setlist:
     artist_name

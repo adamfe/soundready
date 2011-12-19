@@ -2,13 +2,19 @@
 <html>
 <head>
   <title>Soundready</title>
-  <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag "application", "base" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <h1 class="branding">SoundReady <em>with<em> <%= image_tag "/assets/rdio_logo.png", :height => 25 %></h1>
+  <div class="content container">
+    <div class="landing-banner">
+      <%= yield %>
+    </div>
+  </div>
+  <div class="footer container">
+    <p>Made in San Francisco. Copyright © 2011 by <a href="http://twitter.com/dannyhertz">Danny Hertz</a>. All rights reserved.</p>
+  </div>
 </body>
 </html>
