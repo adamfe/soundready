@@ -1,11 +1,34 @@
 @import "twitter/bootstrap";
 
+body {
+  background-color: #eee;
+}
+
 h1.branding {
   text-align: center;
   margin: 10px 0;
   em {
-    font-weight: normal;
+    font-weight: 100;
   }
+}
+
+.container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.content {
+  background-color: white;
+  padding: 20px 20px 0 20px;
+  margin: 0 -20px;
+  .border-radius(0 0 6px 6px);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+.page-header {
+  background-color: whiteSmoke;
+  padding: 5px 5px 5px;
+  margin: -20px -20px 0px;  
 }
 
 .footer {
@@ -18,17 +41,14 @@ h1.branding {
 }
 
 .landing-banner {
-  margin: 0 auto;
   background: url('/assets/concert_1.jpeg');
-  height: 500px;
-  width: 800px;
-  border: 1px solid @grayLight;
-  .border-radius(8px);
+  height: 490px;
+  width: 760px;
+  .border-radius(0 0 6px 6px);
+}
 
-  .landing-content {
-    margin: 30px 0 0 30px;
-  }
-
+.landing-content {
+  padding: 25px 30px 0 30px;
   h1 {
     color: @white;
     width: 295px;
@@ -43,22 +63,4 @@ h1.branding {
   }
 }
 
-.main-column {
-  width: 50%;
-  float: left;
-}
 
-.search-column {
-  padding: 15px 0 0 15px;
-}
-
-.results-column {
-  
-}
-
-.search-explanation {
-  font-size: 20px;
-  line-height: 20px;
-  color: @white;
-  width: 300px;
-}
