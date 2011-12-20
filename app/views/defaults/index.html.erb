@@ -1,15 +1,96 @@
-<style type="text/css">
-
-.span-half {
-  width: 350px;
-  background: blue;
-}
-</style>
-
-<div class="span-half">
-  <p class="search-explanation">What show are you going to see?</p>
-  <input class="xlarge" placeholder="enter an artist" type="text" />
+<div class="span-half search-column">
+    <ul class="item-stream unstyled">
+      <li class="stream-header stream-item">
+        <h2>Find your band:</h2>
+      </li>
+      <li class="stream-item">
+        <form class="form-stacked">
+          <div class="clearfix">
+            <div class="input">
+              <input class="xlarge" id="artist_search" name="artist_search" type="text" placeholder="LCD Soundsystem, Guns N Roses, Coldplay..." />
+            </div>
+          </div>
+        </form>
+      </li>
+    </ul>
 </div>
-<div class="span-half">
-  results!
+<div class="span-half results-column">
+  <ul class="item-stream unstyled">
+    <li class="stream-item stream-header">
+      <h2>Fool's Gold's Setlist:</h2>
+      <%= link_to 'Create Playlist', "#", :method => :post, :class => "btn primary create-playlist" %>
+    </li>
+    <li class="stream-item">
+      <div class="song-content">
+        <%= image_tag "sample.jpeg" %>
+        <h3 class="song-title">The Dive</h3>
+        <div class="song-details">
+          <span class="song-album">Leave No Trace</span> - Fool's Gold
+        </div>
+      </div>
+    </li>
+    <li class="stream-item">
+      <div class="song-content">
+        <%= image_tag "sample.jpeg" %>
+        <h3 class="song-title">Suprise Hotel</h3>
+        <div class="song-details">
+          <span class="song-album">Surpise Hotel</span> - Fool's Gold
+        </div>
+      </div>
+    </li>
+    <li class="stream-item">
+      <div class="song-content">
+        <%= image_tag "sample.jpeg" %>
+        <h3 class="song-title">Mammal</h3>
+        <div class="song-details">
+          <span class="song-album">Leave No Trace</span> - Fool's Gold
+        </div>
+      </div>
+    </li>
+    <li class="stream-item">
+      <div class="song-content">
+        <%= image_tag "sample.jpeg" %>
+        <h3 class="song-title">Tel Aviv</h3>
+        <div class="song-details">
+          <span class="song-album">Leave No Trace</span> - Fool's Gold
+        </div>
+      </div>
+    </li>
+    <li class="stream-item">
+      <div class="song-content">
+        <%= image_tag "sample.jpeg" %>
+        <h3 class="song-title">Chamsa Big Time</h3>
+        <div class="song-details">
+          <span class="song-album">Fool's Gold</span> - Fool's Gold
+        </div>
+      </div>
+    </li>
+    <li class="stream-item">
+      <div class="song-content">
+        <%= image_tag "sample.jpeg" %>
+        <h3 class="song-title">Shut It Down</h3>
+        <div class="song-details">
+          <span class="song-album">Leave No Trace</span> - Fool's Gold
+        </div>
+      </div>
+    </li>
+    <li class="stream-item">
+      <div class="song-content">
+        <%= image_tag "sample.jpeg" %>
+        <h3 class="song-title">Thong Song</h3>
+        <div class="song-details">
+          <span class="song-album">Leave No Trace</span> - Fool's Gold
+        </div>
+      </div>
+    </li>
+    <li class="stream-item">
+      <div class="song-content">
+        <%= image_tag "sample.jpeg" %>
+        <h3 class="song-title">Stairway To Heavan</h3>
+        <div class="song-details">
+          <span class="song-album">Fool's Gold</span> - Fool's Gold
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>

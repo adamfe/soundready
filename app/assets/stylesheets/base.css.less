@@ -6,12 +6,24 @@ body {
   background-color: #222;
 }
 
-h1.branding {
-  text-align: center;
-  margin: 10px 0;
-  font-weight: 600;
-  em {
-    font-weight: 100;
+.page-header {
+  overflow: hidden;
+  .branding {
+    float: left;
+    margin: 10px 20px;
+    font-weight: 600;
+    em {
+      font-weight: 100;
+      font-size: 25px;
+    }
+  }
+
+  .social-buttons {
+    float: right;
+    margin: 20px 20px 0 0;
+    li {
+      float: left;
+    }
   }
 }
 
@@ -26,6 +38,7 @@ h1.branding {
   .border-radius(0 0 6px 6px);
   @shadow: 0 1px 2px rgba(0,0,0,.15), 0 0 50px #333;
   .box-shadow(@shadow);
+  background-color: @white;
 }
 
 .page-header {
@@ -34,8 +47,12 @@ h1.branding {
   margin: -20px -20px 0px;  
 }
 
+.content-body {
+  min-height: 300px;  
+}
+
 .footer {
-  margin-top: 20px;
+  margin-top: 15px;
   text-align: center;
   p, a {
     font-size: 12px;
@@ -44,8 +61,8 @@ h1.branding {
   }
 }
 
-.main-content {
-  background: url('/assets/concert_1.jpeg');
+.landing-bg {
+  background: url('/assets/concert_2.jpeg');
   height: 490px;
   width: 760px;
   .border-radius(0 0 6px 6px);
@@ -74,5 +91,72 @@ h1.branding {
   .btn {
     border: 0;
     .border-radius(4px);
+  }
+}
+
+.span-half {
+  width: 350px;
+}
+
+.search-column form {
+  padding: 0;
+  margin: 0;
+  .clearfix {
+    margin: 0;
+  }
+  input {
+    width: 318px;
+    margin: 10px;
+  }
+}
+
+.item-stream {
+  .border-radius(5px);
+}
+
+.stream-header {
+  .border-radius(5px 5px 0 0);
+  padding: 8px;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 20px;
+  overflow: hidden;
+  h2 {
+    float: left;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  a {
+    float: right;
+  }
+}
+
+.stream-item {
+  position: relative;
+  background-color: whiteSmoke;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.stream-item:last-of-type {
+  .border-radius(0 0 5px 5px);
+}
+
+.stream-item .song-content {
+  margin-left: 50px;
+  padding: 6px;
+  img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    .border-radius(4px);
+  }
+  .song-title {
+    line-height: 18px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 2px;
   }
 }
